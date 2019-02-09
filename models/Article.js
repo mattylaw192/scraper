@@ -1,4 +1,4 @@
-var mongoose =require("mongoose");
+var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
@@ -10,12 +10,12 @@ var ArticleSchema = new Schema ({
     link: {
         type: String,
         required: true
-    },
-
-    note: {
-        type: Schema.Types.ObjectId,
-        ref: "Note"
     }
+
+    // note: {
+    //     type: Schema.Types.ObjectId,
+    //     ref: "Note"
+    // }
 });
 
 
