@@ -37,7 +37,7 @@ app.use(express.static("public"));
 
 
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/searchengineland";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
 
@@ -83,6 +83,7 @@ app.get("/articles", function (req, res) {
             res.json(err);
         });
 });
+
 
 
 
